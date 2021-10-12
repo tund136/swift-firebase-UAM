@@ -17,6 +17,7 @@
 		ADB5AABD2715C36800A59D62 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AABC2715C36800A59D62 /* InputTextFieldView.swift */; };
 		ADB5AAC02715C81500A59D62 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AABF2715C81500A59D62 /* PreviewLayoutComponentModifier.swift */; };
 		ADB5AAC22715CBAA00A59D62 /* InputPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAC12715CBAA00A59D62 /* InputPasswordView.swift */; };
+		ADB5AAC42715D6CC00A59D62 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAC32715D6CC00A59D62 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		ADB5AABC2715C36800A59D62 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
 		ADB5AABF2715C81500A59D62 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
 		ADB5AAC12715CBAA00A59D62 /* InputPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordView.swift; sourceTree = "<group>"; };
+		ADB5AAC32715D6CC00A59D62 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				ADB5AABC2715C36800A59D62 /* InputTextFieldView.swift */,
 				ADB5AAC12715CBAA00A59D62 /* InputPasswordView.swift */,
+				ADB5AAC32715D6CC00A59D62 /* ButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				ADB5AAB92715C0E100A59D62 /* LoginView.swift in Sources */,
 				ADB5AAC02715C81500A59D62 /* PreviewLayoutComponentModifier.swift in Sources */,
 				ADB5AAA12715BD6C00A59D62 /* FirebaseUAMApp.swift in Sources */,
+				ADB5AAC42715D6CC00A59D62 /* ButtonView.swift in Sources */,
 				ADB5AABD2715C36800A59D62 /* InputTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
