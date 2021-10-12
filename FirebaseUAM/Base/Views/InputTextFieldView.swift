@@ -38,6 +38,12 @@ struct InputTextFieldView: View {
 
 struct InputTextFieldView_Previews: PreviewProvider {
     static var previews: some View {
-        InputTextFieldView(text: .constant(""), placeholder: "Email", keyboardType: .emailAddress, sfSymbol: "envelope")
+        Group {
+            InputTextFieldView(text: .constant(""), placeholder: "Email", keyboardType: .emailAddress, sfSymbol: "envelope")
+                .preview(with: "Email Text Input with SF Symbol")
+            
+            InputTextFieldView(text: .constant(""), placeholder: "First Name", keyboardType: .emailAddress, sfSymbol: nil)
+                .preview(with: "Email Text Input without SF Symbol")
+        }
     }
 }

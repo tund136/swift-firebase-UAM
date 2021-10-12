@@ -15,6 +15,7 @@
 		ADB5AAB42715BEC400A59D62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADB5AAB32715BEC400A59D62 /* GoogleService-Info.plist */; };
 		ADB5AAB92715C0E100A59D62 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAB82715C0E100A59D62 /* LoginView.swift */; };
 		ADB5AABD2715C36800A59D62 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AABC2715C36800A59D62 /* InputTextFieldView.swift */; };
+		ADB5AAC02715C81500A59D62 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AABF2715C81500A59D62 /* PreviewLayoutComponentModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		ADB5AAB32715BEC400A59D62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADB5AAB82715C0E100A59D62 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		ADB5AABC2715C36800A59D62 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
+		ADB5AABF2715C81500A59D62 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		ADB5AABA2715C32700A59D62 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				ADB5AABE2715C7DF00A59D62 /* Modifier */,
 				ADB5AABB2715C34A00A59D62 /* Views */,
 			);
 			path = Base;
@@ -115,6 +118,14 @@
 				ADB5AABC2715C36800A59D62 /* InputTextFieldView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ADB5AABE2715C7DF00A59D62 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AABF2715C81500A59D62 /* PreviewLayoutComponentModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADB5AAB92715C0E100A59D62 /* LoginView.swift in Sources */,
+				ADB5AAC02715C81500A59D62 /* PreviewLayoutComponentModifier.swift in Sources */,
 				ADB5AAA12715BD6C00A59D62 /* FirebaseUAMApp.swift in Sources */,
 				ADB5AABD2715C36800A59D62 /* InputTextFieldView.swift in Sources */,
 			);
