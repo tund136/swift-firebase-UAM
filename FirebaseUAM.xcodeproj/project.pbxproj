@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		ADB5AAA12715BD6C00A59D62 /* FirebaseUAMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAA02715BD6C00A59D62 /* FirebaseUAMApp.swift */; };
-		ADB5AAA32715BD6C00A59D62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAA22715BD6C00A59D62 /* ContentView.swift */; };
 		ADB5AAA52715BD7000A59D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB5AAA42715BD7000A59D62 /* Assets.xcassets */; };
 		ADB5AAA82715BD7000A59D62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB5AAA72715BD7000A59D62 /* Preview Assets.xcassets */; };
 		ADB5AAB02715BE9B00A59D62 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ADB5AAAF2715BE9B00A59D62 /* FirebaseAuth */; };
 		ADB5AAB22715BE9B00A59D62 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = ADB5AAB12715BE9B00A59D62 /* FirebaseDatabase */; };
 		ADB5AAB42715BEC400A59D62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADB5AAB32715BEC400A59D62 /* GoogleService-Info.plist */; };
+		ADB5AAB92715C0E100A59D62 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAB82715C0E100A59D62 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ADB5AA9D2715BD6C00A59D62 /* FirebaseUAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseUAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB5AAA02715BD6C00A59D62 /* FirebaseUAMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUAMApp.swift; sourceTree = "<group>"; };
-		ADB5AAA22715BD6C00A59D62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADB5AAA42715BD7000A59D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADB5AAA72715BD7000A59D62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADB5AAB32715BEC400A59D62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADB5AAB82715C0E100A59D62 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +57,9 @@
 		ADB5AA9F2715BD6C00A59D62 /* FirebaseUAM */ = {
 			isa = PBXGroup;
 			children = (
+				ADB5AAB52715C0CB00A59D62 /* Features */,
 				ADB5AAB32715BEC400A59D62 /* GoogleService-Info.plist */,
 				ADB5AAA02715BD6C00A59D62 /* FirebaseUAMApp.swift */,
-				ADB5AAA22715BD6C00A59D62 /* ContentView.swift */,
 				ADB5AAA42715BD7000A59D62 /* Assets.xcassets */,
 				ADB5AAA62715BD7000A59D62 /* Preview Content */,
 			);
@@ -72,6 +72,30 @@
 				ADB5AAA72715BD7000A59D62 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADB5AAB52715C0CB00A59D62 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AAB62715C0D000A59D62 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		ADB5AAB62715C0D000A59D62 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AAB72715C0D400A59D62 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ADB5AAB72715C0D400A59D62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AAB82715C0E100A59D62 /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB5AAA32715BD6C00A59D62 /* ContentView.swift in Sources */,
+				ADB5AAB92715C0E100A59D62 /* LoginView.swift in Sources */,
 				ADB5AAA12715BD6C00A59D62 /* FirebaseUAMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

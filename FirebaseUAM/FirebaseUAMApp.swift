@@ -23,7 +23,9 @@ struct FirebaseUAMApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                LoginView()
+            }
         }
     }
 }
