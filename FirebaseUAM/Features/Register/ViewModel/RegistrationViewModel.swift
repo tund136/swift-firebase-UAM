@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 enum RegistrationState {
-    case successful
+    case successfull
     case failed(error: Error)
     case na
 }
@@ -23,8 +23,22 @@ protocol RegistrationViewModel {
 }
 
 final class RegistrationViewModelImpl: RegistrationViewModel {
+    private var subscriptions = Set<AnyCancellable>()
+    
     func register() {
-        
+        service
+            .register(with: userDetails)
+            .sink { [weak self] res in
+                switch res {
+                case .failure(let error):
+                    self?.state = .failed(error: error)
+                default:
+                    break
+                }
+            } receiveValue: { [weak self] in
+                self?.state = .successfull
+            }
+            .store(in: &subscriptions)
     }
     
     var service: RegistrationService
@@ -36,6 +50,4 @@ final class RegistrationViewModelImpl: RegistrationViewModel {
     init(service: RegistrationService) {
         self.service = service
     }
-    
-    
 }
