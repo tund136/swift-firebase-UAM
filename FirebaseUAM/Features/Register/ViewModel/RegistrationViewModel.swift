@@ -31,7 +31,7 @@ final class RegistrationViewModelImpl: RegistrationViewModel {
     
     var state: RegistrationState = .na
     
-    var userDetails: RegistrationDetails = RegistrationDetails(email: "", password: "", firstName: "", lastName: "", occupation: "")
+    var userDetails: RegistrationDetails = RegistrationDetails.new
     
     init(service: RegistrationService) {
         self.service = service
