@@ -25,6 +25,7 @@
 		ADB5AAD52716909D00A59D62 /* RegistrationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAD42716909D00A59D62 /* RegistrationDetails.swift */; };
 		ADB5AAD82716911900A59D62 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAD72716911900A59D62 /* RegistrationService.swift */; };
 		ADB5AADB27169A0C00A59D62 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AADA27169A0C00A59D62 /* RegistrationViewModel.swift */; };
+		ADB5AADF2716A9BC00A59D62 /* SessionUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AADE2716A9BC00A59D62 /* SessionUserDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		ADB5AAD42716909D00A59D62 /* RegistrationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDetails.swift; sourceTree = "<group>"; };
 		ADB5AAD72716911900A59D62 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
 		ADB5AADA27169A0C00A59D62 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		ADB5AADE2716A9BC00A59D62 /* SessionUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUserDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		ADB5AAB52715C0CB00A59D62 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				ADB5AADC2716A9A800A59D62 /* Session */,
 				ADB5AACF2716842B00A59D62 /* Forgot Password */,
 				ADB5AACB271675F000A59D62 /* Home */,
 				ADB5AAC527166F9900A59D62 /* Register */,
@@ -227,6 +230,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		ADB5AADC2716A9A800A59D62 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AADD2716A9B000A59D62 /* Model */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		ADB5AADD2716A9B000A59D62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AADE2716A9BC00A59D62 /* SessionUserDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,6 +336,7 @@
 				ADB5AADB27169A0C00A59D62 /* RegistrationViewModel.swift in Sources */,
 				ADB5AAD52716909D00A59D62 /* RegistrationDetails.swift in Sources */,
 				ADB5AAD22716846800A59D62 /* ForgotPasswordView.swift in Sources */,
+				ADB5AADF2716A9BC00A59D62 /* SessionUserDetails.swift in Sources */,
 				ADB5AABD2715C36800A59D62 /* InputTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
