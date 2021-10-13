@@ -28,6 +28,7 @@ struct FirebaseUAMApp: App {
                 switch sessionService.state {
                 case .loggedIn:
                     HomeView()
+                        .environmentObject(sessionService)
                 case .loggedOut:
                     LoginView()
                 }
