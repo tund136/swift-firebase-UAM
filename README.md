@@ -20,7 +20,7 @@
 - Project linked and setup with Firebase Console
 
 ### Planning Architecture
-![Planning Architecture][/.planning_architecture.png]
+![Planning Architecture](/.planning_architecture.png)
 
 [firebaseiossdk]: https://github.com/firebase/firebase-ios-sdk
 [firebaseconsole]: https://console.firebase.google.com
