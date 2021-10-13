@@ -18,6 +18,8 @@
 		ADB5AAC02715C81500A59D62 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AABF2715C81500A59D62 /* PreviewLayoutComponentModifier.swift */; };
 		ADB5AAC22715CBAA00A59D62 /* InputPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAC12715CBAA00A59D62 /* InputPasswordView.swift */; };
 		ADB5AAC42715D6CC00A59D62 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAC32715D6CC00A59D62 /* ButtonView.swift */; };
+		ADB5AAC827166FAD00A59D62 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAC727166FAD00A59D62 /* RegisterView.swift */; };
+		ADB5AACA2716707E00A59D62 /* CloseModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAC92716707E00A59D62 /* CloseModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		ADB5AABF2715C81500A59D62 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
 		ADB5AAC12715CBAA00A59D62 /* InputPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordView.swift; sourceTree = "<group>"; };
 		ADB5AAC32715D6CC00A59D62 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		ADB5AAC727166FAD00A59D62 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		ADB5AAC92716707E00A59D62 /* CloseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		ADB5AAB52715C0CB00A59D62 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				ADB5AAC527166F9900A59D62 /* Register */,
 				ADB5AAB62715C0D000A59D62 /* Login */,
 			);
 			path = Features;
@@ -130,8 +135,25 @@
 			isa = PBXGroup;
 			children = (
 				ADB5AABF2715C81500A59D62 /* PreviewLayoutComponentModifier.swift */,
+				ADB5AAC92716707E00A59D62 /* CloseModifier.swift */,
 			);
 			path = Modifier;
+			sourceTree = "<group>";
+		};
+		ADB5AAC527166F9900A59D62 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AAC627166FA300A59D62 /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		ADB5AAC627166FA300A59D62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AAC727166FAD00A59D62 /* RegisterView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +237,8 @@
 				ADB5AAC22715CBAA00A59D62 /* InputPasswordView.swift in Sources */,
 				ADB5AAB92715C0E100A59D62 /* LoginView.swift in Sources */,
 				ADB5AAC02715C81500A59D62 /* PreviewLayoutComponentModifier.swift in Sources */,
+				ADB5AACA2716707E00A59D62 /* CloseModifier.swift in Sources */,
+				ADB5AAC827166FAD00A59D62 /* RegisterView.swift in Sources */,
 				ADB5AAA12715BD6C00A59D62 /* FirebaseUAMApp.swift in Sources */,
 				ADB5AAC42715D6CC00A59D62 /* ButtonView.swift in Sources */,
 				ADB5AABD2715C36800A59D62 /* InputTextFieldView.swift in Sources */,
