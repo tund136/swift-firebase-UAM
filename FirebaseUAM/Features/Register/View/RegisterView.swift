@@ -8,27 +8,30 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @Environment(\.presentationMode) var presentationMode
+    @StateObject private var vm = RegistrationViewModelImpl(
+        service: RegistrationServiceImpl()
+    )
     
     var body: some View {
         NavigationView {
             VStack(spacing: 32) {
                 VStack(spacing: 16) {
-                    InputTextFieldView(text: .constant(""), placeholder: "Email", keyboardType: .emailAddress, sfSymbol: "envelope")
+                    InputTextFieldView(text: $vm.userDetails.email, placeholder: "Email", keyboardType: .emailAddress, sfSymbol: "envelope")
                     
-                    InputPasswordView(password: .constant(""), placeholder: "Password", sfSymbol: "lock")
+                    InputPasswordView(password: $vm.userDetails.password, placeholder: "Password", sfSymbol: "lock")
                     
                     Divider()
                     
-                    InputTextFieldView(text: .constant(""), placeholder: "First Name", keyboardType: .default, sfSymbol: nil)
+                    InputTextFieldView(text: $vm.userDetails.firstName, placeholder: "First Name", keyboardType: .default, sfSymbol: nil)
                     
-                    InputTextFieldView(text: .constant(""), placeholder: "Last Name", keyboardType: .default, sfSymbol: nil)
+                    InputTextFieldView(text: $vm.userDetails.lastName, placeholder: "Last Name", keyboardType: .default, sfSymbol: nil)
                     
-                    InputTextFieldView(text: .constant(""), placeholder: "Occupation", keyboardType: .default, sfSymbol: nil)
+                    InputTextFieldView(text: $vm.userDetails.occupation, placeholder: "Occupation", keyboardType: .default, sfSymbol: nil)
                 }
                 
                 ButtonView(title: "Sign Up", handler: {
                     // TODO: Handle create action
+                    vm.register()
                 })
             }
             .padding(.horizontal)

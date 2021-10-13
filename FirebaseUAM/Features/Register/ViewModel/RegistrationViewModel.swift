@@ -22,7 +22,7 @@ protocol RegistrationViewModel {
     init(service: RegistrationService)
 }
 
-final class RegistrationViewModelImpl: RegistrationViewModel {
+final class RegistrationViewModelImpl: RegistrationViewModel, ObservableObject {
     private var subscriptions = Set<AnyCancellable>()
     
     func register() {
