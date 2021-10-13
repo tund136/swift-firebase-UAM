@@ -20,11 +20,17 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
 struct FirebaseUAMApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var sessionService = SessionServiceImpl()
     
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                LoginView()
+                switch sessionService.state {
+                case .loggedIn:
+                    HomeView()
+                case .loggedOut:
+                    LoginView()
+                }
             }
         }
     }
