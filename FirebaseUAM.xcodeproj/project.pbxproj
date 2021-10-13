@@ -22,6 +22,7 @@
 		ADB5AACA2716707E00A59D62 /* CloseModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAC92716707E00A59D62 /* CloseModifier.swift */; };
 		ADB5AACE2716760200A59D62 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AACD2716760200A59D62 /* HomeView.swift */; };
 		ADB5AAD22716846800A59D62 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAD12716846800A59D62 /* ForgotPasswordView.swift */; };
+		ADB5AAD52716909D00A59D62 /* RegistrationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAD42716909D00A59D62 /* RegistrationDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		ADB5AAC92716707E00A59D62 /* CloseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseModifier.swift; sourceTree = "<group>"; };
 		ADB5AACD2716760200A59D62 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		ADB5AAD12716846800A59D62 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		ADB5AAD42716909D00A59D62 /* RegistrationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		ADB5AAC527166F9900A59D62 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				ADB5AAD327168FFA00A59D62 /* Model */,
 				ADB5AAC627166FA300A59D62 /* View */,
 			);
 			path = Register;
@@ -192,6 +195,14 @@
 				ADB5AAD12716846800A59D62 /* ForgotPasswordView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		ADB5AAD327168FFA00A59D62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AAD42716909D00A59D62 /* RegistrationDetails.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 				ADB5AAC827166FAD00A59D62 /* RegisterView.swift in Sources */,
 				ADB5AAA12715BD6C00A59D62 /* FirebaseUAMApp.swift in Sources */,
 				ADB5AAC42715D6CC00A59D62 /* ButtonView.swift in Sources */,
+				ADB5AAD52716909D00A59D62 /* RegistrationDetails.swift in Sources */,
 				ADB5AAD22716846800A59D62 /* ForgotPasswordView.swift in Sources */,
 				ADB5AABD2715C36800A59D62 /* InputTextFieldView.swift in Sources */,
 			);
