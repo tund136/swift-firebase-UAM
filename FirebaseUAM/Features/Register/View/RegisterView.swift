@@ -12,18 +12,28 @@ struct RegisterView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(spacing: 32) {
+                VStack(spacing: 16) {
+                    InputTextFieldView(text: .constant(""), placeholder: "Email", keyboardType: .emailAddress, sfSymbol: "envelope")
+                    
+                    InputPasswordView(password: .constant(""), placeholder: "Password", sfSymbol: "lock")
+                    
+                    Divider()
+                    
+                    InputTextFieldView(text: .constant(""), placeholder: "First Name", keyboardType: .default, sfSymbol: nil)
+                    
+                    InputTextFieldView(text: .constant(""), placeholder: "Last Name", keyboardType: .default, sfSymbol: nil)
+                    
+                    InputTextFieldView(text: .constant(""), placeholder: "Occupation", keyboardType: .default, sfSymbol: nil)
+                }
                 
+                ButtonView(title: "Sign Up", handler: {
+                    // TODO: Handle create action
+                })
             }
             .padding(.horizontal)
             .navigationBarTitle("Register")
-            .toolbar {
-                Button(action: {
-                    presentationMode.wrappedValue.dismiss()
-                }, label: {
-                    Image(systemName: "xmark")
-                })
-            }
+            .applyClose()
         }
     }
 }
