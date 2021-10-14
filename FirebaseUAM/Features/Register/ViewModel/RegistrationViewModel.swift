@@ -16,6 +16,7 @@ enum RegistrationState {
 
 protocol RegistrationViewModel {
     func register()
+    var hasError: Bool { get }
     var service: RegistrationService { get }
     var state: RegistrationState { get }
     var userDetails: RegistrationDetails { get }
@@ -23,6 +24,8 @@ protocol RegistrationViewModel {
 }
 
 final class RegistrationViewModelImpl: RegistrationViewModel, ObservableObject {
+    @Published var hasError: Bool = false
+    
     private var subscriptions = Set<AnyCancellable>()
     
     func register() {
@@ -43,11 +46,27 @@ final class RegistrationViewModelImpl: RegistrationViewModel, ObservableObject {
     
     var service: RegistrationService
     
-    var state: RegistrationState = .na
+    @Published var state: RegistrationState = .na
     
     var userDetails: RegistrationDetails = RegistrationDetails.new
     
     init(service: RegistrationService) {
         self.service = service
+        setupErrorSubscriptions()
+    }
+}
+
+private extension RegistrationViewModelImpl {
+    func setupErrorSubscriptions() {
+        $state
+            .map { state -> Bool in
+                switch state {
+                case .successfull, .na:
+                    return false
+                case .failed:
+                    return true
+                }
+            }
+            .assign(to: &$hasError)
     }
 }
