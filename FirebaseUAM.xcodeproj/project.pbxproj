@@ -29,6 +29,7 @@
 		ADB5AAE22716AA1200A59D62 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAE12716AA1200A59D62 /* SessionService.swift */; };
 		ADB5AAE52717C2E200A59D62 /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAE42717C2E200A59D62 /* LoginCredentials.swift */; };
 		ADB5AAE82717C38300A59D62 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAE72717C38300A59D62 /* LoginService.swift */; };
+		ADB5AAEB2717C5E100A59D62 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAEA2717C5E100A59D62 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		ADB5AAE12716AA1200A59D62 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 		ADB5AAE42717C2E200A59D62 /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
 		ADB5AAE72717C38300A59D62 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		ADB5AAEA2717C5E100A59D62 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		ADB5AAB62715C0D000A59D62 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				ADB5AAE92717C5C200A59D62 /* ViewModel */,
 				ADB5AAE62717C37B00A59D62 /* Service */,
 				ADB5AAE32717C2CF00A59D62 /* Model */,
 				ADB5AAB72715C0D400A59D62 /* View */,
@@ -279,6 +282,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		ADB5AAE92717C5C200A59D62 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AAEA2717C5E100A59D62 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -365,6 +376,7 @@
 				ADB5AAD82716911900A59D62 /* RegistrationService.swift in Sources */,
 				ADB5AACA2716707E00A59D62 /* CloseModifier.swift in Sources */,
 				ADB5AAE22716AA1200A59D62 /* SessionService.swift in Sources */,
+				ADB5AAEB2717C5E100A59D62 /* LoginViewModel.swift in Sources */,
 				ADB5AAC827166FAD00A59D62 /* RegisterView.swift in Sources */,
 				ADB5AAE52717C2E200A59D62 /* LoginCredentials.swift in Sources */,
 				ADB5AAA12715BD6C00A59D62 /* FirebaseUAMApp.swift in Sources */,
