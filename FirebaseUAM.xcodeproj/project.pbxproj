@@ -28,6 +28,7 @@
 		ADB5AADF2716A9BC00A59D62 /* SessionUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AADE2716A9BC00A59D62 /* SessionUserDetails.swift */; };
 		ADB5AAE22716AA1200A59D62 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAE12716AA1200A59D62 /* SessionService.swift */; };
 		ADB5AAE52717C2E200A59D62 /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAE42717C2E200A59D62 /* LoginCredentials.swift */; };
+		ADB5AAE82717C38300A59D62 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAE72717C38300A59D62 /* LoginService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		ADB5AADE2716A9BC00A59D62 /* SessionUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUserDetails.swift; sourceTree = "<group>"; };
 		ADB5AAE12716AA1200A59D62 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 		ADB5AAE42717C2E200A59D62 /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
+		ADB5AAE72717C38300A59D62 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		ADB5AAB62715C0D000A59D62 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				ADB5AAE62717C37B00A59D62 /* Service */,
 				ADB5AAE32717C2CF00A59D62 /* Model */,
 				ADB5AAB72715C0D400A59D62 /* View */,
 			);
@@ -268,6 +271,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		ADB5AAE62717C37B00A59D62 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AAE72717C38300A59D62 /* LoginService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -346,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB5AAE82717C38300A59D62 /* LoginService.swift in Sources */,
 				ADB5AACE2716760200A59D62 /* HomeView.swift in Sources */,
 				ADB5AAC22715CBAA00A59D62 /* InputPasswordView.swift in Sources */,
 				ADB5AAB92715C0E100A59D62 /* LoginView.swift in Sources */,
