@@ -31,6 +31,7 @@
 		ADB5AAE82717C38300A59D62 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAE72717C38300A59D62 /* LoginService.swift */; };
 		ADB5AAEB2717C5E100A59D62 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAEA2717C5E100A59D62 /* LoginViewModel.swift */; };
 		ADB5AAEE2717CB3600A59D62 /* ForgotPasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAED2717CB3600A59D62 /* ForgotPasswordService.swift */; };
+		ADB5AAF12717D17200A59D62 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAF02717D17100A59D62 /* ForgotPasswordViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		ADB5AAE72717C38300A59D62 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		ADB5AAEA2717C5E100A59D62 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ADB5AAED2717CB3600A59D62 /* ForgotPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordService.swift; sourceTree = "<group>"; };
+		ADB5AAF02717D17100A59D62 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 		ADB5AACF2716842B00A59D62 /* Forgot Password */ = {
 			isa = PBXGroup;
 			children = (
+				ADB5AAEF2717D16000A59D62 /* ViewModel */,
 				ADB5AAEC2717CB2700A59D62 /* Service */,
 				ADB5AAD02716845B00A59D62 /* View */,
 			);
@@ -299,6 +302,14 @@
 				ADB5AAED2717CB3600A59D62 /* ForgotPasswordService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		ADB5AAEF2717D16000A59D62 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AAF02717D17100A59D62 /* ForgotPasswordViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +406,7 @@
 				ADB5AAC42715D6CC00A59D62 /* ButtonView.swift in Sources */,
 				ADB5AADB27169A0C00A59D62 /* RegistrationViewModel.swift in Sources */,
 				ADB5AAD52716909D00A59D62 /* RegistrationDetails.swift in Sources */,
+				ADB5AAF12717D17200A59D62 /* ForgotPasswordViewModel.swift in Sources */,
 				ADB5AAD22716846800A59D62 /* ForgotPasswordView.swift in Sources */,
 				ADB5AADF2716A9BC00A59D62 /* SessionUserDetails.swift in Sources */,
 				ADB5AABD2715C36800A59D62 /* InputTextFieldView.swift in Sources */,
