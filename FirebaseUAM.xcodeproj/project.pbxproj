@@ -30,6 +30,7 @@
 		ADB5AAE52717C2E200A59D62 /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAE42717C2E200A59D62 /* LoginCredentials.swift */; };
 		ADB5AAE82717C38300A59D62 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAE72717C38300A59D62 /* LoginService.swift */; };
 		ADB5AAEB2717C5E100A59D62 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAEA2717C5E100A59D62 /* LoginViewModel.swift */; };
+		ADB5AAEE2717CB3600A59D62 /* ForgotPasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5AAED2717CB3600A59D62 /* ForgotPasswordService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		ADB5AAE42717C2E200A59D62 /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
 		ADB5AAE72717C38300A59D62 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		ADB5AAEA2717C5E100A59D62 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		ADB5AAED2717CB3600A59D62 /* ForgotPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 		ADB5AACF2716842B00A59D62 /* Forgot Password */ = {
 			isa = PBXGroup;
 			children = (
+				ADB5AAEC2717CB2700A59D62 /* Service */,
 				ADB5AAD02716845B00A59D62 /* View */,
 			);
 			path = "Forgot Password";
@@ -288,6 +291,14 @@
 				ADB5AAEA2717C5E100A59D62 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ADB5AAEC2717CB2700A59D62 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5AAED2717CB3600A59D62 /* ForgotPasswordService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +391,7 @@
 				ADB5AAC827166FAD00A59D62 /* RegisterView.swift in Sources */,
 				ADB5AAE52717C2E200A59D62 /* LoginCredentials.swift in Sources */,
 				ADB5AAA12715BD6C00A59D62 /* FirebaseUAMApp.swift in Sources */,
+				ADB5AAEE2717CB3600A59D62 /* ForgotPasswordService.swift in Sources */,
 				ADB5AAC42715D6CC00A59D62 /* ButtonView.swift in Sources */,
 				ADB5AADB27169A0C00A59D62 /* RegistrationViewModel.swift in Sources */,
 				ADB5AAD52716909D00A59D62 /* RegistrationDetails.swift in Sources */,
