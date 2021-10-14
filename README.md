@@ -22,6 +22,9 @@
 ### Planning Architecture
 ![Planning Architecture](/planning_architecture.png)
 
+### Demo Project
+![App UI](/intro.png)
+
 [firebaseiossdk]: https://github.com/firebase/firebase-ios-sdk
 [firebaseconsole]: https://console.firebase.google.com
 [realtimedbrules]: https://gist.github.com/tunds/316b1747f1da7952974f2158c6c9a5a1
